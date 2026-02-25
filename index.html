@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags - Essential for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Webloom - Modern Digital Agency | Showcase Websites & Design Services</title>
+    <meta name="title" content="Webloom - Modern Digital Agency | Showcase Websites & Design Services">
+    <meta name="description" content="Webloom crafts stunning showcase websites and modern designs including posters, presentations, and social media content. Transform your digital presence with our creative agency.">
+    <meta name="keywords" content="web design agency, showcase websites, modern design, presentation design, social media posts, digital agency, creative studio">
+    <meta name="author" content="Webloom">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.webloom.com/">
+    <meta property="og:title" content="Webloom - Modern Digital Agency">
+    <meta property="og:description" content="Crafting stunning showcase websites and modern designs that make your brand bloom.">
+    <meta property="og:image" content="https://www.webloom.com/assets/images/webloom-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.webloom.com/">
+    <meta property="twitter:title" content="Webloom - Modern Digital Agency">
+    <meta property="twitter:description" content="Crafting stunning showcase websites and modern designs that make your brand bloom.">
+    <meta property="twitter:image" content="https://www.webloom.com/assets/images/webloom-twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/webloom-logo.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="assets/fonts/DM_Sans/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/DM_Sans/DMSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Playfair/Playfair_144pt-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload critical hero image -->
+    <link rel="preload" href="assets/images/desktop/hero-bg.webp" as="image" type="image/webp" media="(min-width: 768px)">
+    <link rel="preload" href="assets/images/mobile/hero-bg-mobile.webp" as="image" type="image/webp" media="(max-width: 767px)">
+
+    <!-- fontawesom icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Critical CSS inline to prevent FOUC -->
+    <style>
+        /* Critical path CSS */
+        html, body {
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        html.loaded, html.loaded body {
+            opacity: 1;
+        }
+        
+        /* Minimal layout styles to prevent layout shift */
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media (min-width: 576px) {
+            .container { max-width: 540px; }
+        }
+        
+        @media (min-width: 768px) {
+            .container { max-width: 720px; }
+        }
+        
+        @media (min-width: 992px) {
+            .container { max-width: 960px; }
+        }
+        
+        @media (min-width: 1200px) {
+            .container { max-width: 1140px; }
+        }
+    </style>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Main CSS with custom variables and styles -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+            <div class="container-fluid">
+
+                <!-- BRAND -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <div class="brand-icon d-flex justify-content-center align-items-center me-2">
+                        <i class="fa-brands fa-square-pied-piper"></i>
+                    </div>
+                    <p class="text-uppercase">Webloom</p>
+                </div>
+
+                <!-- HAMBURGER / TOGGLER (Mobile) -->
+                <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- DESKTOP LINKS -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav align-items-center gap-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link main" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#realisations">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activated" href="#demanderDevis">Demander un devis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔵 OFFCANVAS MENU (Mobile + Tablet) -->
+        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <button class="btn-close float-right" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-start gap-3">
+                    <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Accueil</a></li>
+                    <li><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">À propos</a></li>
+                    <li><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a></li>
+                    <li><a class="nav-link" href="#realisations" data-bs-dismiss="offcanvas">Réalisations</a></li>
+                    <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+                    <li><a class="nav-link activated" href="#demanderDevis" data-bs-dismiss="offcanvas">Demander un devis</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- /endnavbar -->
+
+    <!-- Bootstrap JS with defer -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    
+    <!-- Custom JS with defer -->
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Inline script to mark loaded state -->
+    <script>
+        document.documentElement.classList.add('loaded');
+        
+        // Register service worker for offline caching (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>

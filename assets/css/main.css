@@ -1,0 +1,243 @@
+/* ==========================================================================
+    Font Face Declarations - Based on your folder structure
+   ========================================================================== */
+
+/* DM Sans - Primary Body Font */
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DM_Sans/DMSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DM_Sans/DMSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DM_Sans/DMSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DM_Sans/DMSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Playfair - Heading/Accent Font (Italic) */
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/Playfair/Playfair_144pt-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Space Grotesk - UI/Display Font */
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/Space_Grotesk/SpaceGrotesk-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/Space_Grotesk/SpaceGrotesk-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/Space_Grotesk/SpaceGrotesk-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/Space_Grotesk/SpaceGrotesk-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ==========================================================================
+    Root Variables
+   ========================================================================== */
+
+:root {
+    /* Colors */
+    --primary-white: #FFFFFF;
+    --midnight-blue: #1C226B;
+    --purple-heart: #3E31AE;
+    --verdigris: #4AA9AF;
+    --light-cyan: #D1FFFA;
+
+    /* Fonts */
+    --font-body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: "Space Grotesk", "DM Sans", sans-serif;
+    --font-accent: "Playfair", Georgia, serif;
+    --font-ui: "Space Grotesk", system-ui, sans-serif; /* Using Space Grotesk for UI */
+    
+    /* Font Weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 700;
+    --weight-bold: 900;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--primary-white);
+    color: var(--midnight-blue);
+    font-family: var(--font-heading);
+}
+
+
+/* Navbar ======================================================================================================================== */
+.custom-navbar {
+    background: var(--primary-white);
+    backdrop-filter: 1.5;
+    padding: 11px 0;
+}
+
+.brand-icon {
+    height: 40px;
+    width: 40px;
+    background-color: var(--purple-heart);
+    border-radius: 7px;
+    color: var(--primary-white);
+}
+
+.brand-icon i {
+    transform: rotate(20px);
+}
+
+.navbar-brand p {
+    margin: 0;
+    color: var(--purple-heart);
+    font-family: var(--font-body);
+    font-weight: var(--weight-bold);
+}
+
+.nav-link {
+    color: var(--midnight-blue);
+    opacity: .5;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link.main {
+    opacity: 1;
+    color: var(--purple-heart);
+    font-weight: var(--weight-bold);
+}
+
+.nav-link:not(.activated) {
+    padding: 6px 15px;
+}
+
+.nav-link:hover:not(.activated) {
+    color: var(--midnight-blue);
+    opacity: 1;
+}
+
+.nav-link.activated {
+    opacity: 1;
+    background-color: var(--purple-heart);
+    color: var(--primary-white);
+    padding: 8px 25px !important;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.nav-link.activated:hover, 
+.nav-link.activated:focus {
+    background-color: var(--midnight-blue);
+} 
+
+/* HAMBURGER MENU */
+.custom-toggler {
+    border: none;
+    background: transparent;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.custom-toggler span {
+    height: 3px;
+    width: 100%;
+    background: var(--purple-heart);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* OFFCANVAS */
+.mobile-menu {
+    width: 280px;
+    background: var(--purple-heart);
+}
+
+.mobile-menu .nav-link {
+    opacity: .8;
+    font-size: .9rem;
+    color: var(--primary-white);
+    width: fit-content;
+}
+
+.mobile-menu .nav-link:hover {
+    color: var(--light-cyan);
+}
+
+.offcanvas-body .nav-link.activated {
+    background-color: var(--light-cyan);
+    color: var(--midnight-blue);
+}
+
+@media (max-width: 991px) {
+    .navbar-brand .logo {
+        height: 30px;
+    }
+}
