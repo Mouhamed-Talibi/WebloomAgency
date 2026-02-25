@@ -217,27 +217,187 @@ body {
 /* OFFCANVAS */
 .mobile-menu {
     width: 280px;
-    background: var(--purple-heart);
+    background: var(--light-cyan);
 }
 
 .mobile-menu .nav-link {
     opacity: .8;
     font-size: .9rem;
-    color: var(--primary-white);
+    color: var(--midnight-blue);
     width: fit-content;
 }
 
 .mobile-menu .nav-link:hover {
-    color: var(--light-cyan);
+    color: var(--purple-heart);
 }
 
 .offcanvas-body .nav-link.activated {
-    background-color: var(--light-cyan);
-    color: var(--midnight-blue);
+    background-color: var(--purple-heart);
+    color: var(--light-cyan);
 }
 
 @media (max-width: 991px) {
     .navbar-brand .logo {
         height: 30px;
     }
+}
+
+/* ====================================
+    footer 
+======================================*/
+.footer-webloom {
+    background-color: var(--midnight-blue);
+    color: var(--primary-white);
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.01em;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    border-top: 2px solid rgba(209, 255, 250, 0.2);
+    position: relative;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.footer-webloom h3 {
+    font-family: var(--font-heading);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--light-cyan), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin-bottom: 1.5rem !important;
+    font-size: calc(1.2rem + 0.2vw);
+}
+
+.footer-webloom .opacity-75,
+.footer-webloom p,
+.footer-webloom a:not(.btn-floating),
+.footer-webloom li {
+    color: rgba(255,255,255,0.7);
+    font-weight: var(--weight-regular);
+    transition: color 0.2s ease;
+}
+
+.footer-webloom a {
+    color: var(--light-cyan);
+    text-decoration: none;
+    position: relative;
+    font-weight: var(--weight-regular);
+}
+
+.footer-webloom a:not(.btn-floating)::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(90deg, var(--verdigris), var(--light-cyan));
+    transition: width 0.25s ease-out;
+}
+
+.footer-webloom a:not(.btn-floating):hover::after {
+    width: 100%;
+}
+
+.footer-webloom a:not(.btn-floating):hover {
+    color: white;
+}
+
+.footer-webloom hr {
+    background-color: rgba(209, 255, 250, 0.2);
+    height: 1px;
+    border: none;
+    opacity: 0.8;
+    margin: 1.5rem 0;
+}
+
+.footer-webloom .list-unstyled li p {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-family: var(--font-ui);
+    border-radius: 20px;
+    padding: 0.15rem 0;
+}
+
+/* Contact */
+.footer-webloom .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+    font-family: var(--font-body);
+}
+
+.footer-webloom .contact-item i {
+    width: 1.75rem;
+    color: var(--light-cyan);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Social buttons */
+.footer-webloom .btn-floating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(209,255,250,0.25);
+    transition: all 0.25s ease;
+    color: var(--primary-white) !important;
+    font-size: 1.4rem !important;
+    text-decoration: none;
+}
+
+.footer-webloom .btn-floating:hover {
+    background: var(--verdigris);
+    border-color: var(--primary-white);
+    color: var(--midnight-blue) !important;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Copyright */
+.footer-webloom .copyright strong {
+    font-family: var(--font-accent);
+    font-weight: var(--weight-bold);
+    color: var(--light-cyan);
+    border-bottom: 1px dotted var(--verdigris);
+}
+
+.footer-webloom .copyright a {
+    text-decoration: none;
+    font-weight: var(--weight-semibold);
+}
+
+/* Layout */
+.footer-webloom .container {
+    max-width: 1280px;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.footer-webloom .row {
+    row-gap: 1.8rem;
+}
+
+.footer-webloom .opacity-75 {
+    opacity: 0.9 !important;
+    line-height: 1.6;
+}
+
+/* Logo */
+.webloom-brand h3 {
+    font-size: 2rem;
+    background: linear-gradient(145deg, #ffffff, var(--light-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.02em;
 }
