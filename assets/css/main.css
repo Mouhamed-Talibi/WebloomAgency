@@ -571,7 +571,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-content {
         text-align: left;
-        padding: 2rem;
+        padding: 1rem;
     }
     
     .hero-content .tag,
@@ -599,7 +599,7 @@ body {
 @media (max-width: 767px) {
     .hero-content {
         text-align: left;
-        padding: 1.5rem;
+        padding: .5rem;
     }
     
     .hero-content .tag,
@@ -639,7 +639,7 @@ body {
 /* Extra small screens */
 @media (max-width: 575px) {
     .hero-content {
-        padding: 1.25rem;
+        padding: .5rem;
     }
     
     .hero-title {
@@ -695,4 +695,45 @@ body {
 .feature-icon {
     color: var(--verdigris);
     font-size: 0.9rem;
+}
+
+/* =========================================
+    Why us
+========================================= */
+.why-us {
+    background-color: var(--verdigris);
+    padding: 3rem 0;
+}
+
+.why-us-content .left-text h1 {
+    font-family: var(--font-heading);
+}
+
+.why-us-content .left-text p {
+    font-family: var(--font-body);
+    opacity: .8;
+}
+
+.why-us-content .key-points .point {
+    background-color: var(--light-cyan);
+    color: var(--midnight-blue);
+}
+
+.why-us-content .right-text .strengths .strength-card {
+    background-color: var(--light-cyan);
+    color: var(--midnight-blue) !important;
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all .4s ease;
+}
+
+.why-us-content .right-text .strengths .strength-card:hover {
+    background-color: var(--primary-white);
+    transform: translateY(-5px);
+}
+
+.why-us-content .right-text .strengths .strength-card-icon {
+    background-color: var(--verdigris);
+    color: var(--primary-white);
+    height: 50px;
+    width: 60px;
 }
