@@ -624,7 +624,7 @@ body {
     .cta-wrapper {
         flex-direction: column;
         width: 100%;
-        gap: 0.75rem !important;
+        gap: 0.5rem !important;
     }
     
     .cta-wrapper .btn {
