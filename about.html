@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags - Essential for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Webloom - Modern Digital Agency | Showcase Websites & Design Services</title>
+    <meta name="title" content="Webloom - Modern Digital Agency | Showcase Websites & Design Services">
+    <meta name="description" content="Webloom crafts stunning showcase websites and modern designs including posters, presentations, and social media content. Transform your digital presence with our creative agency.">
+    <meta name="keywords" content="web design agency, showcase websites, modern design, presentation design, social media posts, digital agency, creative studio">
+    <meta name="author" content="Webloom">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.webloom.com/">
+    <meta property="og:title" content="Webloom - Modern Digital Agency">
+    <meta property="og:description" content="Crafting stunning showcase websites and modern designs that make your brand bloom.">
+    <meta property="og:image" content="https://www.webloom.com/assets/images/webloom-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.webloom.com/">
+    <meta property="twitter:title" content="Webloom - Modern Digital Agency">
+    <meta property="twitter:description" content="Crafting stunning showcase websites and modern designs that make your brand bloom.">
+    <meta property="twitter:image" content="https://www.webloom.com/assets/images/webloom-twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/webloom-logo.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="assets/fonts/DM_Sans/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/DM_Sans/DMSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Playfair/Playfair_144pt-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload critical hero image -->
+    <link rel="preload" href="assets/images/desktop/hero-bg.webp" as="image" type="image/webp" media="(min-width: 768px)">
+    <link rel="preload" href="assets/images/mobile/hero-bg-mobile.webp" as="image" type="image/webp" media="(max-width: 767px)">
+
+    <!-- fontawesom icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Critical CSS inline to prevent FOUC -->
+    <style>
+        /* Critical path CSS */
+        html, body {
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        html.loaded, html.loaded body {
+            opacity: 1;
+        }
+        
+        /* Minimal layout styles to prevent layout shift */
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media (min-width: 576px) {
+            .container { max-width: 540px; }
+        }
+        
+        @media (min-width: 768px) {
+            .container { max-width: 720px; }
+        }
+        
+        @media (min-width: 992px) {
+            .container { max-width: 960px; }
+        }
+        
+        @media (min-width: 1200px) {
+            .container { max-width: 1140px; }
+        }
+    </style>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Main CSS with custom variables and styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar sticky-top shadow">
+            <div class="container">
+
+                <!-- BRAND -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <div class="brand-icon d-flex justify-content-center align-items-center me-2">
+                        <i class="fa-brands fa-square-pied-piper"></i>
+                    </div>
+                    <p class="text-uppercase">Webloom</p>
+                </div>
+
+                <!-- HAMBURGER / TOGGLER (Mobile) -->
+                <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- DESKTOP LINKS -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav align-items-center gap-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link main" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#realisations">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activated" href="contact.html">Demander un devis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔵 OFFCANVAS MENU (Mobile + Tablet) -->
+        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <button class="btn-close float-right" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-start gap-3">
+                    <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Accueil</a></li>
+                    <li><a class="nav-link" href="about.html" data-bs-dismiss="offcanvas">À propos</a></li>
+                    <li><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a></li>
+                    <li><a class="nav-link" href="#realisations" data-bs-dismiss="offcanvas">Réalisations</a></li>
+                    <li><a class="nav-link" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+                    <li><a class="nav-link activated" href="contact.html" data-bs-dismiss="offcanvas">Demander un devis</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- /endnavbar -->
+
+    <!-- About section -->
+    <!-- About Hero Section -->
+    <section id="about-hero" class="about-hero py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <span class="about-badge text-uppercase">Notre histoire</span>
+                    <h1 class="about-title">Nous tissons vos idées pour créer des expériences digitales uniques</h1>
+                    <p class="about-description">Webloom est né d'une passion pour le design et le développement web. Nous croyons que chaque marque mérite une présence en ligne qui reflète véritablement son identité et ses valeurs.</p>
+                    
+                    <!-- Stats -->
+                    <div class="row g-4 mt-4">
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Clients satisfaits</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Support dédié</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Image -->
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/about-hero.webp" 
+                            alt="Webloom creative agency workspace" 
+                            class="about-image"
+                            loading="lazy">
+                        <div class="about-image-pattern"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Notre Vision</h3>
+                        <p>Créer des expériences digitales qui marquent les esprits et font fleurir les marques dans l'écosystème numérique.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Notre Mission</h3>
+                        <p>Transformer vos idées en solutions web performantes, alliant esthétique moderne et fonctionnalités avancées.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3>Nos Valeurs</h3>
+                        <p>Créativité, transparence, et excellence dans chaque projet, avec une attention particulière aux détails.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="founder-image-wrapper">
+                        <img src="assets/images/mohamed-talibi.webp" 
+                            alt="Mouhamed Talibi - Fondateur de Webloom" 
+                            class="founder-image"
+                            loading="lazy">
+                        <div class="founder-social">
+                            <a href="https://www.linkedin.com/in/mouhamedtalibi/" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dev.talibi/" class="social-link" aria-label="Twitter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Mouhamed-Talibi" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <span class="founder-badge">FONDATEUR & CRÉATEUR</span>
+                    <h2 class="founder-name">Mouhamed Talibi</h2>
+                    <div class="founder-roles">
+                        <span class="role-tag">Canvas Designer</span>
+                        <span class="role-tag">Web Developer</span>
+                        <span class="role-tag">UI/UX Designer</span>
+                    </div>
+                    <p class="founder-bio">
+                        Passionné par le design et le développement web, j'ai fondé Webloom avec une vision claire : 
+                        créer des sites web qui ne sont pas seulement beaux, mais qui racontent une histoire et génèrent 
+                        des résultats concrets. Avec plus de 5 ans d'expérience dans le domaine, je combine créativité 
+                        et expertise technique pour donner vie à vos projets.
+                    </p>
+                    <p class="founder-bio">
+                        Ma double casquette de designer et développeur me permet de comprendre chaque aspect d'un projet, 
+                        de la maquette initiale jusqu'au code final, garantissant une cohérence parfaite entre le design 
+                        et la réalisation technique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="approach-title">Mon approche créative</h2>
+                    <p class="approach-subtitle">Comment je donne vie à vos idées</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="approach-card">
+                        <div class="approach-number">01</div>
+                        <i class="fa-regular fa-lightbulb approach-card-icon"></i>
+                        <h4>Idéation</h4>
+                        <p>Comprendre votre vision et vos objectifs pour créer une stratégie sur mesure.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="approach-card">
+                        <div class="approach-number">02</div>
+                        <i class="fa-regular fa-pen-to-square approach-card-icon"></i>
+                        <h4>Design</h4>
+                        <p>Création d'interfaces modernes et intuitives qui captivent vos visiteurs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="approach-card">
+                        <div class="approach-number">03</div>
+                        <i class="fa-solid fa-code approach-card-icon"></i>
+                        <h4>Développement</h4>
+                        <p>Code propre et performant pour une expérience utilisateur optimale.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="approach-card">
+                        <div class="approach-number">04</div>
+                        <i class="fa-regular fa-circle-check approach-card-icon"></i>
+                        <h4>Lancement</h4>
+                        <p>Mise en ligne et suivi pour garantir le succès de votre projet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta py-5">
+        <div class="container">
+            <div class="cta-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="cta-title">Prêt à donner vie à votre projet ?</h2>
+                        <p class="cta-text">Travaillons ensemble pour créer quelque chose d'exceptionnel</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="contact.html" class="cta-button">
+                            Démarrer un projet
+                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /end about section -->
+
+    <!-- Footer -->
+    <footer class="footer-webloom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Marque + description -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="webloom-brand">
+                        <h3>Webloom</h3>
+                    </div>
+                    <p class="opacity-75" style="max-width: 280px;">
+                        Agence web spécialisée en création de sites vitrine, développement web sur mesure 
+                        et design UI/UX moderne au Maroc. Nous transformons vos idées en solutions digitales performantes.
+                    </p>
+                </div>
+
+                <!-- Liens utiles -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3>Liens utiles</h3>
+                    <p><a href="index.html" class="text-white text-decoration-none opacity-75">Accueil</a></p>
+                    <p><a href="" class="text-white text-decoration-none opacity-75">À propos</a></p>
+                    <p><a href="index.html#services" class="text-white text-decoration-none opacity-75">Services</a></p>
+                    <p><a href="index.html#portoflio" class="text-white text-decoration-none opacity-75">Réalisations</a></p>
+                    <p><a href="contact.html" class="text-white text-decoration-none opacity-75">Contact</a></p>
+                    <p><a href="contact.html" class="text-white text-decoration-none opacity-75">Demander un devis</a></p>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3>Nos services</h3>
+                    <ul class="list-unstyled">
+                        <li><p class="opacity-75">Création de site vitrine</p></li>
+                        <li><p class="opacity-75">Développement web sur mesure</p></li>
+                        <li><p class="opacity-75">Design UI/UX professionnel</p></li>
+                        <li><p class="opacity-75">Optimisation SEO</p></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3>Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-home"></i>
+                        <span>Maroc, Ouled Teima</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            mouhamedtalibi@gmail.com
+                            <br>
+                            webloom.dig@gmail.com
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+212 767453214</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <!-- Bas de footer -->
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8 copyright">
+                    <p class="mb-2 mb-md-0">
+                        © 2025 Webloom – Tous droits réservés | Agence web & création de sites au Maroc
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <ul class="list-unstyled list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/webloom.agency.ma/" class="btn-floating" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/mouhamedtalibi/" class="btn-floating" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- /end footer -->
+
+    <!-- Bootstrap JS with defer -->
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Custom JS with defer -->
+    <script src="assets/js/nav.js" defer></script>
+    <!-- Inline script to mark loaded state -->
+    <script>
+        document.documentElement.classList.add('loaded');
+        
+        // Register service worker for offline caching (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>
